@@ -216,6 +216,9 @@ img{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media screen and (max-width: 728px) {
+    .upcity{
+        margin-top: -200px;
+    }
     .untitle{
         display: flex;
         flex-direction: column;
@@ -225,5 +228,12 @@ img{
         width: 60%;
         height: 150px;
         margin-left: -150px;
+    }
+    .pic{
+        height: 800px;
+    }
+    .pic-in-pic{
+        background-repeat: no-repeat;
+        height: 800px;
     }
 }
