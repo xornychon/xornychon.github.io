@@ -6,49 +6,212 @@ body{
     width: 100vw;
     height: 100vh;
 }
-.global-header{
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-color: silver;
-    
-}
-.right-side, .left-side{
-    min-height: 75px;
     padding: 5px;
+    
+    width: 100%;
+    height: 80px;
+}
+.h-left{
     display: flex;
     flex-direction: row;
+    justify-content:flex-start ;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+.h-right{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end ;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.logo{
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Australian_Broadcasting_Corporation_logo_%281974-%29.svg/1200px-Australian_Broadcasting_Corporation_logo_%281974-%29.svg.png");
+    background-size:50px;
+    background-repeat: no-repeat;
+    background-position: 10px;
 }
-
-nav{
+.aira{
     display: flex;
-    gap: 20px;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-left: -25px;
 }
-nav a{
-    color: black;
+a{
     text-decoration: none;
+    color: rgb(31, 31, 31);
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1200px-Search_Icon.svg.png");
+    background-size:35px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.global{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=58f7f81b1366fad3ff165da3c795bca1c50e7041-8497672-images-thumbs&n=13");
+    background-size:30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=5b13bdf10476a69a6a7a554b02a2cf9ee57d1691-3054743-images-thumbs&n=13");
+    background-size:30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+main{
+    width: 100vw;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pic{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}       
+.pic-in-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 450px;
+    background-image: url("https://www.orangesmile.com/common/img_cities_original/jiddah--3096108-43.jpg");
+    background-size: cover;
+    background-position: 0px -200px;
+    padding-left: 300px;
+}
+.title{
+    color: white;
+    font-size: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-@media screen and (max-width: 728px) {
-    .global-header, .left-side, .right-side{
-        flex-direction: column;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav a{
-        min-width: 90vw;
-        border: 1px solid black;
-        text-align: center;
-    }
+}
+.subtitle{
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    .logo{
-        display: none;
-    }
+}
+.upcity{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 200px;
+
+}
+.cities{
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.city-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    width: 100%;
+    height: 50px;
+}
+.untitle{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.city1{
+    width: 23%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.city2{
+    width: 23%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.city3{
+    width: 23%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.city4{
+    width: 23%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+img{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+.way1, .way2, .way3, .way4{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.distanse1{
+    color: gold;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
