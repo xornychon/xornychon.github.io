@@ -215,3 +215,15 @@ img{
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+@media screen and (max-width: 728px) {
+    .untitle{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .city1, .city2, .city3, .city4{
+        width: 60%;
+        height: 150px;
+        margin-left: -150px;
+    }
+}
